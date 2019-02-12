@@ -138,11 +138,63 @@ html {
   font-size: 62.5%;
 }
 body {
+  background: #FFFFFF;
+  color: #222222;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 1.6rem;
 }
+h1 {
+  color: #FFFFFF;
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 3rem;
+  padding: 10px;
+}
+footer {
+  background: #828282;
+  color: #FFFFFF;
+  padding: 40px;
+  display: flex;
+}
+.container {
+  margin: 0 auto;
+  width: 1024px;
+}
+.main-container {
+  position: relative;
+}
+.main-container .statement {
+  position: absolute;
+  color: white;
+  font-size: 5.4rem;
+  bottom: 40px;
+  left: 50px;
+}
 .top-bar {
-  background: lightgray;
-  border: 1px solid black;
+  background: #98A2AD;
+  padding: 15px 70px;
   display: flex;
   justify-content: space-between;
+}
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px 0;
+}
+.top-section .top-content {
+  border: 1px solid red;
+  margin: 10px;
+  width: 47%;
+}
+.top-section .top-content p {
+  font-size: 2rem;
+  padding: 10px;
+}
+.top-section .top-content button {
+  background: #FFFFFF;
+  border: 1px solid #222222;
+  margin: 10px;
+  padding: 15px 30px;
 }
