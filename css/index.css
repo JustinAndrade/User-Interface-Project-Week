@@ -143,6 +143,12 @@ body {
   font-family: Roboto, Arial, sans-serif;
   font-size: 1.6rem;
 }
+nav {
+  display: none;
+}
+nav nav a {
+  color: #FFFFFF;
+}
 h1 {
   color: #FFFFFF;
   font-size: 2.6rem;
@@ -150,6 +156,15 @@ h1 {
 h2 {
   font-size: 3rem;
   padding: 10px;
+}
+span {
+  border: 1px solid black;
+  background: #D8D8D8;
+  margin-bottom: 100px;
+  padding: 20px 30px;
+  width: 400px;
+  position: absolute;
+  bottom: 0;
 }
 footer {
   background: #828282;
@@ -178,23 +193,38 @@ footer {
   justify-content: space-between;
 }
 .top-section {
+  line-height: 24px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
   padding: 20px 0;
 }
 .top-section .top-content {
-  border: 1px solid red;
   margin: 10px;
   width: 47%;
 }
 .top-section .top-content p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 10px;
 }
 .top-section .top-content button {
   background: #FFFFFF;
   border: 1px solid #222222;
   margin: 10px;
-  padding: 15px 30px;
+  padding: 10px 20px;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+}
+.bottom-section .bottom-content {
+  padding: 100px 0;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.bottom-section .bottom-content .bottom-img {
+  width: 100%;
 }
