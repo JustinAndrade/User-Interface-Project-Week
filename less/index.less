@@ -87,6 +87,11 @@ h2 {
   padding: 10px;
 }
 
+h5 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 span {
   border: 1px solid black;
   background: #D8D8D8;
@@ -100,8 +105,29 @@ span {
 footer {
   background: #828282;
   color: #FFFFFF;
-  padding: 40px;
-  display: flex;
+  line-height: 24px;
+
+  .footer-content {
+    display: flex;
+
+    .location {
+      padding: 35px;
+
+      h4 {
+        font-weight: bold;
+      }
+      
+      p {
+        font-size: 1.2rem;
+      }
+
+      input {
+        color: gray;
+        padding: 5px;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .container {
