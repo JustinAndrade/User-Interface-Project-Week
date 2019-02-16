@@ -1,0 +1,133 @@
+.top-bar {
+    background: @gray;
+    padding: 15px 70px; 
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.main-container {
+    position: relative;
+    
+    .statement {
+        position: absolute;
+        color: @white;
+        font-size: 6.4rem;
+        font-weight: bold;
+        bottom: 40px;
+        left: 50px;
+        line-height: 75px;
+    }
+}
+
+.top-section {
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px 0;
+
+    .top-content {
+        margin: 10px 0;
+        width: 47%;
+        
+        h2 {
+            font-weight: bold;
+            font-size: 2.4rem;
+            color: @black;
+            padding-top: 50px;
+        }
+
+        p {
+            font-size: 1.6rem;
+            padding: 20px 25px 15px 0;
+        }
+        
+        button {
+        background: @white;
+        border: 1px solid @black;
+        margin: 10px 0;
+        padding: 10px 20px;
+        }
+    }
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+
+    h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 20px 0 50px 0;
+}
+
+.bottom-content {
+    padding: 100px 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    .bottom-img {
+    width: 100%;
+    }
+}
+}
+
+#bot-img-1 {
+    .botImg(url('/img/home/home-villas-img.png'));
+    
+    .image-block {
+        .imgBlock;
+    }
+}
+
+#bot-img-2 {
+    .botImg(url('/img/home/home-outskirts-img.png'));
+
+    .image-block {
+        .imgBlock;
+    }
+}
+
+#bot-img-3 {
+    .botImg(url('/img/home/home-the-blocks-img.png'));
+    
+    .image-block {
+        .imgBlock;
+    }
+}
+
+footer {
+    background: #828282;
+    color: #FFFFFF;
+    line-height: 24px;
+
+    .footer-content {
+        display: flex;
+
+        .location {
+            padding: 35px;
+            
+            h4 {
+                font-size: 20px;
+                line-height: 2.4rem;
+                color: #FFFFFF;
+                font-weight: bold;
+            }
+            
+            p {
+                font-size: 1.4rem;
+                line-height: 26px;
+            }
+            
+            input {
+                color: gray;
+                padding: 5px;
+                width: 100%;
+            }
+        }
+    }
+}
+
