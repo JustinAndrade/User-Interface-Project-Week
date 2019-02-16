@@ -162,9 +162,6 @@ p {
   position: relative;
   cursor: pointer;
 }
-.menu-close-button {
-  display: none;
-}
 .menu {
   display: none;
   position: fixed;
@@ -182,9 +179,20 @@ p {
 .menu a {
   list-style-type: none;
   font-size: 4.8rem;
-  text-align: center;
+  font-weight: bold;
+  color: #222222;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  line-height: 85px;
+}
+.menu a:hover {
+  color: #FFFFFF;
 }
 .menu--open {
+  display: block;
+}
+.menu--close {
   display: block;
 }
 .top-bar {
@@ -192,6 +200,11 @@ p {
   padding: 15px 70px;
   display: flex;
   justify-content: space-between;
+}
+.top-bar h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #FFFFFF;
 }
 .main-container {
   position: relative;
