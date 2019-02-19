@@ -160,25 +160,33 @@ p {
 }
 .top-bar {
   background: #98A2AD;
-  padding: 15px 70px;
+  padding: 15px 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.top-bar .container {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
 }
 .top-bar h1 {
   font-size: 2.4rem;
   font-weight: bold;
   color: #FFFFFF;
+  padding: 0 20px;
 }
-.top-bar .menu-button {
+.top-bar .open-menu-button {
+  position: relative;
+  cursor: pointer;
+}
+.top-bar .close-menu-button {
+  display: none;
   position: relative;
   cursor: pointer;
 }
 .top-bar .menu {
+  display: none;
   position: fixed;
-  width: 100%;
   top: 1px;
   height: 100%;
   background-color: lightgray;
@@ -186,6 +194,7 @@ p {
   opacity: 0.9;
   z-index: 1;
   padding-top: 15%;
+  width: 100vw;
 }
 .top-bar .menu:hover {
   color: #222222;
@@ -208,12 +217,16 @@ p {
   display: block;
 }
 .menu--close {
-  display: block;
+  display: none;
 }
-.main-container {
+.container {
+  margin: 0 auto;
+}
+.jumbotron-container {
   position: relative;
+  width: 100%;
 }
-.main-container .statement {
+.jumbotron-container .statement {
   position: absolute;
   color: #FFFFFF;
   font-size: 6.4rem;
