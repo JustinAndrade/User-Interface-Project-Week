@@ -46,6 +46,12 @@ h1 {
         border: 1px solid @black;
         margin: 10px 0;
         padding: 10px 20px;
+
+            &:hover {
+            cursor: pointer;
+            background: @gray;
+            color: @black;
+            }
         }
     }
 }
@@ -87,6 +93,8 @@ h1 {
 
     .image-block {
         .imgBlock;
+
+        left: 0;
     }
 }
 
@@ -135,3 +143,32 @@ footer {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .jumbotron-container {
+        .statement {
+            font-size: 3.6rem;
+            line-height: 40px;
+            bottom: 29px;
+            left: 20px;
+        }
+    }
+
+    .top-section {
+        flex-direction: column;
+        width: 100vw;
+        .top-content {
+            width: 100%;
+            button {
+                width: 100%;
+            }
+        }
+    }
+    
+    .bottom-section {
+        flex-direction: column;
+        width: 100vw;
+        .bottom-content {
+            width: 100%;
+        }
+    }
+}

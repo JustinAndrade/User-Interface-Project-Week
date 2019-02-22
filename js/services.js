@@ -20,12 +20,10 @@ class TabLink {
 
   select() {
     // Get all of the elements with the tabs-link class
-    const links = this.element.querySelectorAll('.tabs-link');
+    const links = document.querySelectorAll('.tabs-link');
 
     // Using a loop or the forEach method remove the 'tabs-link-selected' class from all of the links
-    Array.from(links).forEach(element  => {    
-      element.classList.remove('tabs-link-selected');
-    });
+    links.forEach(element => element.classList.remove('tabs-link-selected'));
 
     // Add a class named "tabs-link-selected" to this link
     this.element.classList.add('tabs-link-selected');
@@ -48,11 +46,11 @@ class TabItem {
     const items = document.querySelectorAll('.tabs-item')
     // Remove the class "tabs-item-selected" from each element
     items.forEach(item => item.classList.remove('tabs-item-selected'));  
-    console.log(this.items);
+    // console.log(this.items);
     // Add a class named "tabs-item-selected" to this element
     //this.element;
     this.element.classList.add('tabs-item-selected');
-    console.log(this.element);
+    // console.log(this.element);
   }
 }
 

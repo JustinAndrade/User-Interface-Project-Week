@@ -1,15 +1,15 @@
 .imgBlock {
   background: #D8D8D8;
   color: black;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   letter-spacing: 6px;
   margin-bottom: 200px;
-  padding: 30px 30px;
+  padding: 30px 0;
+  width: 315px;
   text-align: center;
-  width: 270px;
   position: absolute;
-  top: 70%;
-  right: 0;
+  top: 59%;
+  right: 16.4%;
 }
 html,
 body,
@@ -163,11 +163,12 @@ p {
   padding: 15px 0;
   position: fixed;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
 }
 .top-bar .container {
   display: flex;
   justify-content: space-between;
+  width: 100vw;
 }
 .top-bar h1 {
   font-size: 2.4rem;
@@ -175,14 +176,14 @@ p {
   color: #FFFFFF;
   padding: 0 20px;
 }
-.top-bar .menu {
+.top-bar .drop-menu {
   display: none;
   position: fixed;
   top: 1px;
   height: 100vh;
   background-color: lightgray;
   color: #FFFFFF;
-  opacity: 0.9;
+  opacity: 0.95;
   z-index: 1;
   padding-top: 15%;
   width: 100vw;
@@ -207,6 +208,15 @@ p {
 #menu-button {
   cursor: pointer;
   z-index: 2;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 400px) {
+  .top-bar {
+    width: 100vw;
+  }
+  .top-bar .drop-menu {
+    padding-top: 40%;
+  }
 }
 .container {
   margin: 0 auto;
@@ -253,6 +263,11 @@ h1 {
   margin: 10px 0;
   padding: 10px 20px;
 }
+.top-section .top-content button:hover {
+  cursor: pointer;
+  background: #98A2AD;
+  color: #222222;
+}
 .bottom-section {
   display: flex;
   flex-direction: column;
@@ -285,15 +300,15 @@ h1 {
 #bot-img-1 .image-block {
   background: #D8D8D8;
   color: black;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   letter-spacing: 6px;
   margin-bottom: 200px;
-  padding: 30px 30px;
+  padding: 30px 0;
+  width: 315px;
   text-align: center;
-  width: 270px;
   position: absolute;
-  top: 70%;
-  right: 0;
+  top: 59%;
+  right: 16.4%;
 }
 #bot-img-2 {
   background-image: url('/img/home/home-outskirts-img.png');
@@ -307,15 +322,16 @@ h1 {
 #bot-img-2 .image-block {
   background: #D8D8D8;
   color: black;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   letter-spacing: 6px;
   margin-bottom: 200px;
-  padding: 30px 30px;
+  padding: 30px 0;
+  width: 315px;
   text-align: center;
-  width: 270px;
   position: absolute;
-  top: 70%;
-  right: 0;
+  top: 59%;
+  right: 16.4%;
+  left: 0;
 }
 #bot-img-3 {
   background-image: url('/img/home/home-the-blocks-img.png');
@@ -329,15 +345,15 @@ h1 {
 #bot-img-3 .image-block {
   background: #D8D8D8;
   color: black;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   letter-spacing: 6px;
   margin-bottom: 200px;
-  padding: 30px 30px;
+  padding: 30px 0;
+  width: 315px;
   text-align: center;
-  width: 270px;
   position: absolute;
-  top: 70%;
-  right: 0;
+  top: 59%;
+  right: 16.4%;
 }
 footer {
   background: #828282;
@@ -368,6 +384,31 @@ footer .footer-content .location input {
   margin: 10px 0;
   padding: 5px;
   width: 100%;
+}
+@media only screen and (max-width: 400px) {
+  .jumbotron-container .statement {
+    font-size: 3.6rem;
+    line-height: 40px;
+    bottom: 29px;
+    left: 20px;
+  }
+  .top-section {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .top-section .top-content {
+    width: 100%;
+  }
+  .top-section .top-content button {
+    width: 100%;
+  }
+  .bottom-section {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .bottom-section .bottom-content {
+    width: 100%;
+  }
 }
 .services-container {
   padding: 40px 70px;
