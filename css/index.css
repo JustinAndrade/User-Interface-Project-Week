@@ -9,7 +9,6 @@
   text-align: center;
   position: absolute;
   top: 59%;
-  right: 16.4%;
 }
 html,
 body,
@@ -241,32 +240,38 @@ h1 {
   line-height: 24px;
   display: flex;
   flex-wrap: wrap;
-  padding: 35px;
 }
-.top-section .top-content {
-  margin: 10px 0;
-  width: 47%;
+.top-section-2 {
+  line-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  margin-bottom: 100px;
 }
-.top-section .top-content h2 {
+h2 {
   font-weight: bold;
   font-size: 2.4rem;
   color: #222222;
   padding-top: 50px;
 }
-.top-section .top-content p {
+p {
   font-size: 1.6rem;
   padding: 20px 25px 15px 0;
 }
-.top-section .top-content button {
+button {
   background: #FFFFFF;
   border: 1px solid #222222;
   margin: 10px 0;
   padding: 10px 20px;
 }
-.top-section .top-content button:hover {
+button:hover {
   cursor: pointer;
   background: #98A2AD;
   color: #222222;
+}
+.top-content {
+  margin: 50px 50px 0 0;
+  width: 45%;
 }
 .bottom-section {
   display: flex;
@@ -294,7 +299,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  width: 1024px;
+  width: 100vw;
   position: relative;
 }
 #bot-img-1 .image-block {
@@ -308,7 +313,6 @@ h1 {
   text-align: center;
   position: absolute;
   top: 59%;
-  right: 16.4%;
 }
 #bot-img-2 {
   background-image: url('/img/home/home-outskirts-img.png');
@@ -316,7 +320,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  width: 1024px;
+  width: 100vw;
   position: relative;
 }
 #bot-img-2 .image-block {
@@ -330,8 +334,7 @@ h1 {
   text-align: center;
   position: absolute;
   top: 59%;
-  right: 16.4%;
-  left: 0;
+  left: 540px;
 }
 #bot-img-3 {
   background-image: url('/img/home/home-the-blocks-img.png');
@@ -339,7 +342,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  width: 1024px;
+  width: 100vw;
   position: relative;
 }
 #bot-img-3 .image-block {
@@ -353,7 +356,6 @@ h1 {
   text-align: center;
   position: absolute;
   top: 59%;
-  right: 16.4%;
 }
 footer {
   background: #828282;
@@ -393,13 +395,21 @@ footer .footer-content .location input {
     left: 20px;
   }
   .top-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100vw;
+    margin-top: 30px;
   }
-  .top-section .top-content {
+  .top-section-2 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 30px;
+  }
+  .top-content {
+    margin: 0;
     width: 100%;
   }
-  .top-section .top-content button {
+  .top-content button {
     width: 100%;
   }
   .bottom-section {
@@ -408,6 +418,28 @@ footer .footer-content .location input {
   }
   .bottom-section .bottom-content {
     width: 100%;
+  }
+  #bot-img-2 {
+    background-image: url('/img/home/home-outskirts-img.png');
+    background-size: 1024px 230px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100vw;
+    position: relative;
+  }
+  #bot-img-2 .image-block {
+    background: #D8D8D8;
+    color: black;
+    font-size: 2.4rem;
+    letter-spacing: 6px;
+    margin-bottom: 200px;
+    padding: 30px 0;
+    width: 315px;
+    text-align: center;
+    position: absolute;
+    top: 59%;
+    left: 0;
   }
 }
 .services-container {
