@@ -208,7 +208,6 @@ p {
 #menu-button {
   cursor: pointer;
   z-index: 2;
-  margin-right: 30px;
 }
 @media only screen and (max-width: 400px) {
   .top-bar {
