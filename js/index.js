@@ -1,1 +1,2 @@
-// JS goes here
+import 'menu.js';
+import 'services.js';
